@@ -1,0 +1,5 @@
+ADD_EXECUTABLE(worder main.cpp)
+INCLUDE_DIRECTORIES(../include)
+
+SET(LIB_LIST AddWordTool DatabaseImpl ExamTool GetExamStrategyByRandom Interactor MemoryStrategyByMemoryCurve MemoryStrategyByMemoryCurveStorage MyException NewWordCountTool OperateFileStrategyImpl SearchWordTool StartPage User UserImpl UsernameReader UserWord UserWordImpl Viewer ViewerDisplayerImpl ViewerImpl WordImpl WordPickerStrategyByMemoryCurve WordReciteTool)
+TARGET_LINK_LIBRARIES(worder ${LIB_LIST})
